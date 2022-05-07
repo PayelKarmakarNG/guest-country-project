@@ -115,7 +115,7 @@ export default {
     font-size: 12px;
     position: relative;
     height: 52px;
-    right: 18px;
+    right: 16px;
     bottom: 16px;
     width: 394px;
     padding-left: 16px;
