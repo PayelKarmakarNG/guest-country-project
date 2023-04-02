@@ -84,8 +84,8 @@ export default {
                 '+' + (elem.value.nr_of_rooms - elem.reference_value.nr_of_rooms) : elem.value.nr_of_rooms - elem.reference_value.nr_of_rooms
             }
           })
-          .sort((a, b) => b.nr_of_rooms - a.nr_of_rooms)
-          .sort((a, b) => b.changeInValue - a.changeInValue)
+          .sort((a, b) => (b.nr_of_rooms - a.nr_of_rooms) && (b.changeInValue - a.changeInValue))
+          // .sort((a, b) => b.changeInValue - a.changeInValue)
     },
     
     computed: {
